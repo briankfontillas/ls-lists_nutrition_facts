@@ -3,53 +3,16 @@
   padding: 0;
   font-family: Helvetica Black, Helvetica, Arial;
   font-size: 27px;
-} 
+  outline: solid red;;
+  text-align: left;
+}
 
 main {
-  box-sizing: border-box;
-  border: 2px solid black;
-  width: 680px;
-  height: 100%;
-  padding: 0 13px;
-  margin: 7.5px
+  margin: 10px;
+  width: 675px;
 }
 
-header {
-  box-sizing: border-box;
-  padding-top: 5px;
-  border-bottom: 15px solid black;
-}
-
-h1 {
+thead th {
+  display: inline-block;
   font-size: 2em;
-}
-
-main section:first-of-type {
-  border: 15px solid black;
-  border-style: solid none;
-}
-
-h3 {
-  padding: 8px 0;
-  border-bottom: 1px solid black;
-}
-
-dl {
-  outline: solid red;
-}
-
-dt {
-  font-weight: bold;
-  display: inline-block;
-  min-width: 0;
-}
-
-dd {
-  outline: solid red;
-  display: inline-block;
-}
-
-dl dd:last-of-type {
-  outline: solid blue;
-  background-color: red;
 }
