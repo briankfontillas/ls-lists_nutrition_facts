@@ -3,7 +3,7 @@
   padding: 0;
   font-family: Helvetica Black, Helvetica, Arial;
   font-size: 28px;
-  outline: .5px solid red;;
+  /* outline: .5px solid red;; */
   text-align: left;
 }
 
@@ -15,28 +15,80 @@ article {
   border: 2px solid black;
 }
 
-article dd:last-of-type {
-  background-color: aquamarine;
+header {
+  border-bottom: 15px solid black;
 }
 
 h1 {
   font-size: 2em;
 }
 
+header dl + dl {
+  text-align: right;
+}
+
+header:first-of-type h2 {
+  border-top: 30px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+header dl {
+  display: inline-block;
+  width: 49.3%;
+  padding: 5px 0;
+}
+
 dt {
   display: inline;
-  font-weight: bold;
 }
 
 dd {
   display: inline;
+  margin-inline-start: 0;
 }
 
-td:last-of-type {
-  text-align: right;
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  font-weight: normal;
+}
+
+
+.indent + th dl dt {
+  font-weight: normal;
+  /* display: table-cell; */
+}
+
+header dl + dl dt {
+  font-weight: normal;
 }
 
 .indent {
-  background-color: blue;
-  width: 5px;
+  width: 28px;
+}
+
+table:first-of-type thead tr {
+  text-align: right;
+  width: 100%;
+}
+
+table:first-of-type thead th {
+  padding-top: 8px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+  /* background-color: yellow; */
+}
+
+table:first-of-type tbody:first-of-type tr td {
+  text-align: right;
+  font-weight: bold;
+}
+
+table:first-of-type tbody:last-of-type {
+  border-top: 15px solid black;
+  background-color: gray;
 }
