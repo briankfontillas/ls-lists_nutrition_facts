@@ -59,16 +59,12 @@ dl dd {
 
 .indent + th dl dt {
   font-weight: normal;
-  /* display: table-cell; */
 }
 
 header dl + dl dt {
   font-weight: normal;
 }
 
-.indent {
-  width: 28px;
-}
 
 table:first-of-type thead tr {
   text-align: right;
@@ -79,7 +75,7 @@ table:first-of-type thead th {
   padding-top: 8px;
   text-align: right;
   white-space: nowrap;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   /* background-color: yellow; */
 }
 
@@ -89,6 +85,45 @@ table:first-of-type tbody:first-of-type tr td {
 }
 
 table:first-of-type tbody:last-of-type {
+  box-sizing: border-box;
   border-top: 15px solid black;
-  background-color: gray;
+  /* background-color: gray; */
+}
+
+table:first-of-type tbody:first-of-type tr {
+  border-top: 1px solid black;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.indent {
+  width: 28px;
+  border: none;
+}
+
+table:first-of-type tbody:last-of-type tr {
+  border-bottom: 1px solid black;
+}
+
+table:first-of-type tbody:last-of-type tr td + td {
+  text-align: right;
+}
+
+tfoot tr td{ 
+  padding: 15px 0 20px 10px;
+  font-size: .9rem;
+  text-align: left;
+  text-indent: -0.7rem;
+}
+
+table:last-of-type th, table:last-of-type td {
+  background-color: grey;
+  font-size: 95%;
+}
+
+table:last-of-type thead tr:first-of-type th {
+  font-weight: none;
 }
